@@ -4,6 +4,6 @@ kind: Kustomization
 namespace: argocd
 
 resources:
-  - ../../argo-apps/base/argocd-helm.yaml
-  - ../../argo-apps/base/external-dns-helm.yaml
-  - ../../argo-apps/base/ingress-nginx-helm.yaml
+  - ../argo-apps/base/argocd-helm.yaml
+  - ../argo-apps/base/external-dns-helm.yaml
+  - ../argo-apps/base/ingress-nginx-helm.yaml
