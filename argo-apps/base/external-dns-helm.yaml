@@ -3,6 +3,8 @@ kind: Application
 metadata:
   name: external-dns-helm
   namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
 
 spec:
   project: default
@@ -23,9 +25,7 @@ spec:
       valuesObject:
         fullnameOverride: external-dns
         provider: cloudflare
-        domainFilters: ["${DOMAIN}"]
         policy: sync
-        txtOwnerId: "k8s-${ENVIRONMENT}"
 
         env:
           - name: CF_API_TOKEN
