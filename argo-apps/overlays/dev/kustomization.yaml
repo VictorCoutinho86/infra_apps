@@ -4,4 +4,4 @@ kind: Kustomization
 namespace: argocd
 
 resources:
-  - ../../base/base/ingress-nginx-helm.yaml
+  - ../../base/ingress-nginx-helm.yaml
